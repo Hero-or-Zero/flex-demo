@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>flex-wrap</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        html, body {
+            height: 100%;
+        }
+        body {
+            display: flex;
+        }
+        .tmp {
+            width: 300px;
+            height:300px;
+            border: 1px solid black;
+            display: flex;
+        }
+        .rect {
+            width: 50px;
+            height: 50px;
+            border: 1px solid #ccc;
+        }
+        .nowrap {
+            flex-wrap: nowrap;
+        }
+        .wrap {
+            flex-wrap: wrap;
+        }
+        .wrap-reverse {
+            flex-wrap: wrap-reverse;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h3>nowrap</h3>
+        <div class="tmp nowrap">
+            <div class="rect">1</div>
+            <div class="rect">2</div>
+            <div class="rect">3</div>
+            <div class="rect">4</div>
+            <div class="rect">5</div>
+            <div class="rect">6</div>
+            <div class="rect">7</div>
+            <div class="rect">8</div>
+            <div class="rect">9</div>
+        </div>
+    </div>
+    <div>
+        <h3>wrap</h3>
+        <div class="tmp wrap">
+            <div class="rect">1</div>
+            <div class="rect">2</div>
+            <div class="rect">3</div>
+            <div class="rect">4</div>
+            <div class="rect">5</div>
+            <div class="rect">6</div>
+            <div class="rect">7</div>
+            <div class="rect">8</div>
+            <div class="rect">9</div>
+        </div>
+    </div>
+    <div>
+        <h3>wrap-reverse</h3>
+        <div class="tmp wrap-reverse">
+            <div class="rect">1</div>
+            <div class="rect">2</div>
+            <div class="rect">3</div>
+            <div class="rect">4</div>
+            <div class="rect">5</div>
+            <div class="rect">6</div>
+            <div class="rect">7</div>
+            <div class="rect">8</div>
+            <div class="rect">9</div>
+        </div>
+    </div>
+</body>
+</html>

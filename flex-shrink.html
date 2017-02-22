@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        html, body {
+            height: 100%;
+        }
+        body {
+            /*display: flex;*/
+        }
+        .tmp {
+            width: 300px;
+            height:300px;
+            border: 1px solid black;
+            display: flex;
+        }
+        .rect {
+            width: 50px;
+            height: 50px;
+        }
+        .rect1, .rect4, .rect7 {
+            background-color: #0a8ddf;
+        }
+        .rect2, .rect5, .rect8 {
+            background-color: #4cd964;
+        }
+        .rect3, .rect6, .rect9 {
+            background-color: #333333;
+        }
+        .rect2_4, .rect2_7 {
+            flex-shrink: 0;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <div class="tmp">
+            <div class="rect rect1">1</div>
+            <div class="rect rect2">1</div>
+            <div class="rect rect3">1</div>
+            <div class="rect rect4">1</div>
+            <div class="rect rect5">1</div>
+            <div class="rect rect6">1</div>
+            <div class="rect rect7">1</div>
+            <div class="rect rect8">1</div>
+            <div class="rect rect9">1</div>
+        </div>
+    </div>
+    <div>
+        <div class="tmp">
+            <div class="rect rect1">1</div>
+            <div class="rect rect2">1</div>
+            <div class="rect rect3">1</div>
+            <div class="rect rect4 rect2_4">0</div>
+            <div class="rect rect5">1</div>
+            <div class="rect rect6">1</div>
+            <div class="rect rect7 rect2_7">0</div>
+            <div class="rect rect8">1</div>
+            <div class="rect rect9">1</div>
+        </div>
+    </div>
+</body>
+</html>

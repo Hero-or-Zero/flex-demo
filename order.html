@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>order</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        html, body {
+            height: 100%;
+        }
+        body {
+            display: flex;
+        }
+        .tmp {
+            width: 300px;
+            height:300px;
+            border: 1px solid black;
+            display: flex;
+        }
+        .rect {
+            width: 50px;
+            height: 50px;
+        }
+        .rect1 {
+            background-color: #0a8ddf;
+            order: 0;
+        }
+        .rect2 {
+            background-color: #4cd964;
+            order: -1;
+        }
+        .rect3 {
+            background-color: #333333;
+            order: 1;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <div class="tmp">
+            <div class="rect rect1">order: 0</div>
+            <div class="rect rect2">order: -1</div>
+            <div class="rect rect3">order: 1</div>
+        </div>
+    </div>
+</body>
+</html>

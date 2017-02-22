@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        html, body {
+            height: 100%;
+        }
+        body {
+            display: flex;
+        }
+        .tmp {
+            width: 300px;
+            height:300px;
+            border: 1px solid black;
+            display: flex;
+        }
+        .rect {
+            width: 50px;
+            height: 50px;
+        }
+        .rect1, .rect4, .rect7 {
+            background-color: #0a8ddf;
+        }
+        .rect2, .rect5, .rect8 {
+            background-color: #4cd964;
+        }
+        .rect3, .rect6, .rect9 {
+            background-color: #333333;
+        }
+
+        .rect1 {
+            flex-basis: 20%;
+        }
+        .rect4 {
+            flex-basis: 30px;
+        }
+        .rect7 {
+            flex-basis: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <div class="tmp">
+            <div class="rect rect1">20%</div>
+            <div class="rect rect2"></div>
+            <div class="rect rect3"></div>
+        </div>
+    </div>
+    <div>
+        <div class="tmp">
+            <div class="rect rect4">30px</div>
+            <div class="rect rect5"></div>
+            <div class="rect rect6"></div>
+        </div>
+    </div>
+    <div>
+        <div class="tmp">
+            <div class="rect rect7">100%</div>
+            <div class="rect rect8"></div>
+            <div class="rect rect9"></div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        html, body {
+            height: 100%;
+        }
+        body {
+            /*display: flex;*/
+        }
+        .panel {
+            display: flex;
+        }
+        .tmp {
+            width: 300px;
+            height:300px;
+            border: 1px solid black;
+            display: flex;
+        }
+        .rect {
+            width: 80px;
+            height: 80px;
+        }
+        .rect1 {
+            background-color: #0a8ddf;
+        }
+        .rect2 {
+            background-color: #4cd964;
+        }
+        .rect3 {
+            background-color: #333333;
+        }
+        .rect2 {
+            align-self: auto;
+        }
+        .rect4 {
+            align-self: flex-start;
+        }
+        .rect5 {
+            align-self: flex-end;
+        }
+        .rect6 {
+            align-self: center;
+        }
+        .rect7 {
+            align-self: baseline;
+        }
+        .rect8 {
+            align-self: stretch;
+        }
+    </style>
+</head>
+<body>
+    <div class="panel">
+        <div>
+            <div class="tmp">
+                <div class="rect rect1"></div>
+                <div class="rect rect2">auto</div>
+                <div class="rect rect3"></div>
+            </div>
+        </div>
+        <div>
+            <div class="tmp">
+                <div class="rect rect1"></div>
+                <div class="rect rect2 rect4">flex-start</div>
+                <div class="rect rect3"></div>
+            </div>
+        </div>
+        <div>
+            <div class="tmp">
+                <div class="rect rect1"></div>
+                <div class="rect rect2 rect5">flex-end</div>
+                <div class="rect rect3"></div>
+            </div>
+        </div>
+    </div>
+    <div class="panel">
+        <div>
+            <div class="tmp">
+                <div class="rect rect1"></div>
+                <div class="rect rect2 rect6">center</div>
+                <div class="rect rect3"></div>
+            </div>
+        </div>
+        <div>
+            <div class="tmp">
+                <div class="rect rect1">
+                    <h1>null</h1>
+                </div>
+                <div class="rect rect2 rect7">
+                    <h4>baseline</h4>
+                </div>
+                <div class="rect rect3">
+                    <h2>null</h2>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div class="tmp">
+                <div class="rect rect1"></div>
+                <div class="rect rect2 rect8">stretch</div>
+                <div class="rect rect3"></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

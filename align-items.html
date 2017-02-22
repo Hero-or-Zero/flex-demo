@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        html, body {
+            height: 100%;
+        }
+        body {
+            display: flex;
+        }
+        .tmp {
+            width: 250px;
+            height:300px;
+            border: 1px solid black;
+            display: flex;
+        }
+        .rect {
+            width: 50px;
+            height: 50px;
+        }
+        .rect1, .rect_null1 {
+            background-color: #0a8ddf;
+        }
+        .rect2, .rect_null2 {
+            background-color: #4cd964;
+        }
+        .rect3, .rect_null3 {
+            background-color: #333333;
+        }
+
+        .flex-start {
+            align-items: flex-start;
+        }
+        .flex-end {
+            align-items: flex-end;
+        }
+        .center {
+            align-items: center;
+        }
+        .baseline {
+            align-items: baseline;
+        }
+        .stretch {
+            align-items: stretch;
+        }
+        .rect_null1, .rect_null2, .rect_null3 {
+            width: 50px;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <div class="tmp flex-start">
+            <div class="rect rect1"></div>
+            <div class="rect rect2"></div>
+            <div class="rect rect3"></div>
+        </div>
+        <h3>flex-start</h3>
+    </div>
+    <div>
+        <div class="tmp flex-end">
+            <div class="rect rect1"></div>
+            <div class="rect rect2"></div>
+            <div class="rect rect3"></div>
+        </div>
+        <h3>flex-end</h3>
+    </div>
+    <div>
+        <div class="tmp center">
+            <div class="rect rect1"></div>
+            <div class="rect rect2"></div>
+            <div class="rect rect3"></div>
+        </div>
+        <h3>center</h3>
+    </div>
+    <div>
+        <div class="tmp baseline">
+            <div class="rect rect1">
+                <h1>1</h1>
+            </div>
+            <div class="rect rect2">
+                <h4>2</h4>
+            </div>
+            <div class="rect rect3">
+                <h2>3</h2>
+            </div>
+        </div>
+        <h3>baseline</h3>
+    </div>
+    <div>
+        <div class="tmp stretch">
+            <div class="rect rect1"></div>
+            <div class="rect rect2"></div>
+            <div class="rect rect3"></div>
+        </div>
+        <h3>stretch(给高度)</h3>
+    </div>
+    <div>
+        <div class="tmp stretch">
+            <div class="rect_null1"></div>
+            <div class="rect_null2"></div>
+            <div class="rect_null3"></div>
+        </div>
+        <h3>stretch(不给高度)</h3>
+    </div>
+</body>
+</html>

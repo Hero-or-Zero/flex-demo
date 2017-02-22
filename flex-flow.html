@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>flex-flow</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        html, body {
+            height: 100%;
+        }
+        body {
+            display: flex;
+        }
+        .tmp {
+            width: 300px;
+            height:300px;
+            border: 1px solid black;
+            /*display: flex;*/
+        }
+        .rect {
+            width: 50px;
+            height: 50px;
+            border: 1px solid #ccc;
+        }
+        .flow {
+            display: flex;
+            flex-flow: column wrap;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <div class="tmp flow">
+            <div class="rect">1</div>
+            <div class="rect">2</div>
+            <div class="rect">3</div>
+            <div class="rect">4</div>
+            <div class="rect">5</div>
+            <div class="rect">6</div>
+            <div class="rect">7</div>
+            <div class="rect">8</div>
+            <div class="rect">9</div>
+        </div>
+        <h3>flex-flow: column wrap;</h3>
+    </div>
+</body>
+</html>

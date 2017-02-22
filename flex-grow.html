@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>flex-grow</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        html, body {
+            height: 100%;
+        }
+        body {
+            display: flex;
+        }
+        .tmp {
+            width: 400px;
+            height:400px;
+            border: 1px solid black;
+            display: flex;
+        }
+        .rect {
+            width: 100px;
+            height: 100px;
+        }
+        .rect1, .rect4, .rect7 {
+            background-color: #0a8ddf;
+        }
+        .rect2, .rect5, .rect8 {
+            background-color: #4cd964;
+        }
+        .rect3, .rect6, .rect9 {
+            background-color: #333333;
+        }
+
+        .rect1 {
+            flex-grow: 1;
+        }
+        .rect4, .rect5, .rect6 {
+            flex-grow: 1;
+        }
+        .rect7 {
+            flex-grow: 2;
+        }
+        .rect8, .rect9 {
+            flex-grow: 1;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <div class="tmp">
+            <div class="rect rect1">1</div>
+            <div class="rect rect2">0(default)</div>
+            <div class="rect rect3">0(default)</div>
+        </div>
+    </div>
+    <div>
+        <div class="tmp">
+            <div class="rect rect4">1</div>
+            <div class="rect rect5">1</div>
+            <div class="rect rect6">1</div>
+        </div>
+    </div>
+    <div>
+        <div class="tmp">
+            <div class="rect rect7">2</div>
+            <div class="rect rect8">1</div>
+            <div class="rect rect9">1</div>
+        </div>
+    </div>
+</body>
+</html>

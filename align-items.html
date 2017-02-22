@@ -13,6 +13,9 @@
             height: 100%;
         }
         body {
+            /*display: flex;*/
+        }
+        .panel {
             display: flex;
         }
         .tmp {
@@ -56,59 +59,63 @@
     </style>
 </head>
 <body>
-    <div>
-        <div class="tmp flex-start">
-            <div class="rect rect1"></div>
-            <div class="rect rect2"></div>
-            <div class="rect rect3"></div>
-        </div>
-        <h3>flex-start</h3>
-    </div>
-    <div>
-        <div class="tmp flex-end">
-            <div class="rect rect1"></div>
-            <div class="rect rect2"></div>
-            <div class="rect rect3"></div>
-        </div>
-        <h3>flex-end</h3>
-    </div>
-    <div>
-        <div class="tmp center">
-            <div class="rect rect1"></div>
-            <div class="rect rect2"></div>
-            <div class="rect rect3"></div>
-        </div>
-        <h3>center</h3>
-    </div>
-    <div>
-        <div class="tmp baseline">
-            <div class="rect rect1">
-                <h1>1</h1>
+    <div class="panel">
+        <div>
+            <div class="tmp flex-start">
+                <div class="rect rect1"></div>
+                <div class="rect rect2"></div>
+                <div class="rect rect3"></div>
             </div>
-            <div class="rect rect2">
-                <h4>2</h4>
+            <h3>flex-start</h3>
+        </div>
+        <div>
+            <div class="tmp flex-end">
+                <div class="rect rect1"></div>
+                <div class="rect rect2"></div>
+                <div class="rect rect3"></div>
             </div>
-            <div class="rect rect3">
-                <h2>3</h2>
+            <h3>flex-end</h3>
+        </div>
+        <div>
+            <div class="tmp center">
+                <div class="rect rect1"></div>
+                <div class="rect rect2"></div>
+                <div class="rect rect3"></div>
             </div>
+            <h3>center</h3>
         </div>
-        <h3>baseline</h3>
     </div>
-    <div>
-        <div class="tmp stretch">
-            <div class="rect rect1"></div>
-            <div class="rect rect2"></div>
-            <div class="rect rect3"></div>
+    <div class="panel">
+        <div>
+            <div class="tmp baseline">
+                <div class="rect rect1">
+                    <h1>1</h1>
+                </div>
+                <div class="rect rect2">
+                    <h4>2</h4>
+                </div>
+                <div class="rect rect3">
+                    <h2>3</h2>
+                </div>
+            </div>
+            <h3>baseline</h3>
         </div>
-        <h3>stretch(给高度)</h3>
-    </div>
-    <div>
-        <div class="tmp stretch">
-            <div class="rect_null1"></div>
-            <div class="rect_null2"></div>
-            <div class="rect_null3"></div>
+        <div>
+            <div class="tmp stretch">
+                <div class="rect rect1"></div>
+                <div class="rect rect2"></div>
+                <div class="rect rect3"></div>
+            </div>
+            <h3>stretch(给高度)</h3>
         </div>
-        <h3>stretch(不给高度)</h3>
+        <div>
+            <div class="tmp stretch">
+                <div class="rect_null1"></div>
+                <div class="rect_null2"></div>
+                <div class="rect_null3"></div>
+            </div>
+            <h3>stretch(不给高度)</h3>
+        </div>
     </div>
 </body>
 </html>

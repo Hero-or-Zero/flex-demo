@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+	    <meta charset="UTF-8">
+	    <title>水平垂直居中</title>
+	</head>
+	<style>
+		* {
+			box-sizing: border-box;
+			margin:0;
+			padding: 0;
+		}
+		html, body, .container {
+			height: 100%;
+		}
+		.container {
+			display: flex;
+			align-items: center; /*垂直居中*/
+			justify-content: center; /*水平居中*/
+		}
+		.center {
+			background-color: #0271bc;
+			width: 200px;
+			height: 200px;
+		}
+	</style>
+	<body>
+		<div class="container">
+			<div class="center"></div>
+		</div>
+	</body>
+</html>

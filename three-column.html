@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+	    <meta charset="UTF-8">
+	    <title>三栏布局</title>
+	</head>
+	<style>
+		* {
+			box-sizing: border-box;
+			margin:0;
+			padding: 0;
+		}
+		html, body, .container {
+			height: 100%;
+		}
+		.container {
+			display: flex;
+			align-itmes: stretch; /*不设置高度占据整个容器高度*/
+		}
+		.left, .right {
+			width: 200px;
+			background-color: #d4d4d4;
+		}
+		.center {
+			background-color: #0271bc;
+			flex-grow: 1; /*占据剩余宽度*/
+		}
+	</style>
+	<body>
+		<div class="container">
+			<div class="left"></div>
+			<div class="center"></div>
+			<div class="right"></div>
+		</div>
+	</body>
+</html>
